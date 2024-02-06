@@ -14,7 +14,6 @@ const StyledTableCell = styled(TableCell)(({ theme }) => ({
   [`&.${tableCellClasses.head}`]: {
     borderBottom: '1px solid white',
     backgroundColor:'#DE975d',
-    
     // backgroundColor: theme.palette.common.black,
     color: theme.palette.common.black,
     fontWeight: 'bold',
@@ -28,7 +27,6 @@ const StyledTableRow = styled(TableRow)(({ theme }) => ({
   '&:nth-of-type(odd)': {
     backgroundColor: theme.palette.action.hover,
   },
-
   '&:last-child td, &:last-child th': {
     border: 0,
   },
@@ -42,20 +40,6 @@ const Home = () => {
       setData(res.data)
     })
   },[])
-    // const [employees, setEmployees] = useState([]);
-
-    // useEffect(() => {
-    //   const fetchData = async () => {
-    //     try {
-    //       const response = await axios.get('https://jsonplaceholder.typicode.com/users');
-    //       setEmployees(response.data);
-    //     } catch (error) {
-    //       console.error('Error fetching data:', error);
-    //     }
-    //   };
-  
-    //   fetchData();
-    // }, []);
   return (
     <TableContainer component={Paper} className="table-container"  >
     <Table sx={{ minWidth: '400'}} aria-label="simple table">
@@ -64,7 +48,6 @@ const Home = () => {
           <StyledTableCell>ID</StyledTableCell>
           <StyledTableCell align="right">Name</StyledTableCell>
           <StyledTableCell align="right">Email</StyledTableCell>
-          
         </TableRow>
       </TableHead>
       <TableBody>
@@ -78,7 +61,6 @@ const Home = () => {
             </StyledTableCell>
             <StyledTableCell align="right">{row.name}</StyledTableCell>
             <StyledTableCell align="right">{row.email}</StyledTableCell>
-        
           </StyledTableRow>
         ))}
       </TableBody>

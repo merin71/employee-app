@@ -12,7 +12,7 @@ const Navbar = () => {
       <AppBar position="static">
         <Toolbar>
           <Typography variant="h6" component="div" sx={{ flexGrow: 1, textAlign: 'left'}}>
-            Employee Dashboard
+              Employee Dashboard
           </Typography>
           <Button color="inherit">
             <Link style={{textDecoration:'none',color:'white'}} to={'/'}>Home</Link>
